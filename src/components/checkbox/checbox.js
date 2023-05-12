@@ -2,7 +2,8 @@ import React from 'react';
 import { Checkbox } from 'antd';
 import { connect, useDispatch } from 'react-redux';
 
-import actionFilter from '../actions/actionFilter';
+// import actionFilter from '../actions/actionFilter';
+import { actionFilter } from '../toolkit/reduser';
 
 import classes from './checkbox.module.scss';
 

@@ -8,9 +8,9 @@ import Checkboxes from '../checkbox/checbox';
 import classes from './filter.module.scss';
 
 function Filter() {
-  const checked = useSelector((state) => state.filter.checked);
+  const checked = useSelector((state) => state.toolkit.checked);
   const [checkedList, setCheckedList] = useState({ ...checked });
-
+  console.log(checkedList);
   useEffect(() => {
     setCheckedList(checked);
   }, [checked]);
